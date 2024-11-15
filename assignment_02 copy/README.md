@@ -86,7 +86,45 @@ d. Copy and paste the new regression model estimates after the commands
 ```summary(lm_full_model)``` and ```summary(lm_no_damage)```. 
 
 ```
-Copy your results here.
+Call:
+lm(formula = car_price ~ mileage + accident + damage, data = car_data)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+ -7712  -2333   -408   2592   8435 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  4.942e+04  1.931e+03  25.593  < 2e-16 ***
+mileage     -1.845e-01  3.889e-02  -4.745 7.27e-06 ***
+accident    -4.639e+03  7.820e+02  -5.933 4.71e-08 ***
+damage      -2.008e+04  2.265e+03  -8.866 4.06e-14 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3728 on 96 degrees of freedom
+Multiple R-squared:  0.624,	Adjusted R-squared:  0.6123 
+F-statistic: 53.11 on 3 and 96 DF,  p-value: < 2.2e-16
+
+Call:
+lm(formula = car_price ~ mileage + accident, data = car_data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-22526.9  -2555.2   -126.7   3198.4   9550.7 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  4.686e+04  2.562e+03  18.293  < 2e-16 ***
+mileage     -1.313e-01  5.155e-02  -2.547   0.0124 *  
+accident    -6.197e+03  1.022e+03  -6.062 2.57e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5002 on 97 degrees of freedom
+Multiple R-squared:  0.3162,	Adjusted R-squared:  0.3021 
+F-statistic: 22.43 on 2 and 97 DF,  p-value: 9.858e-09
+
 ```
 
 

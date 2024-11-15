@@ -83,7 +83,7 @@ source('../tools/sim_tools.R')
 beta_0          <-   50000     # Intercept
 beta_mileage    <- -  0.20     # Slope coefficient for mileage
 beta_accident   <- -  5000     # Slope coefficient for accident
-beta_damage     <- - 20000     # Slope coefficient for damage
+beta_damage     <- - 0     # Slope coefficient for damage
 # beta_damage     <-       0   # Alternate Slope coefficient for damage
 
 # Distribution of mileage.
